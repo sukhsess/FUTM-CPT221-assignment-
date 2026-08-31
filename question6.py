@@ -1,24 +1,4 @@
-print("\nQUESTION 6A")
-print("Ordinary Differential Equations")
 
-print("""
-An Ordinary Differential Equation (ODE) is an equation
-involving a function and its derivatives with respect
-to one independent variable.
-
-A nonlinear ODE is an ODE in which the dependent
-variable or its derivatives occur in a nonlinear form.
-
-A system of nonlinear ODEs consists of two or more
-interconnected nonlinear differential equations.
-
-Importance of Runge-Kutta methods:
-1. They provide approximate solutions to ODEs.
-2. They are generally accurate.
-3. They are useful when exact solutions are difficult.
-4. They are widely used in scientific and engineering simulations.
-5. They can solve many practical differential equation problems.
-""")
 
 
 print("\nQUESTION 6B")
@@ -42,3 +22,27 @@ y = (
 
 print("p =", p)
 print("y(1.5) =", round(y, 4))
+
+
+
+# Question 6(c) - Lagrange Interpolation
+
+x = [0, 1, 2]
+y = [1, 3, 2]
+
+# Calculate the polynomial coefficients
+
+# L0 = (x-1)(x-2) / 2
+# L1 = -x(x-2)
+# L2 = x(x-1) / 2
+
+# P(x) = 1L0 + 3L1 + 2L2
+
+a = -1.5
+b = 3.5
+c = 1
+
+print("Question 6(c)")
+print("Interpolation Polynomial:")
+
+print("P(x) =", a, "x^2 +", b, "x +", c)
