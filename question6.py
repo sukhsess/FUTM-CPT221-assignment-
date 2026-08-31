@@ -1,6 +1,5 @@
 
 
-
 print("\nQUESTION 6B")
 print("Newton Forward Interpolation")
 
