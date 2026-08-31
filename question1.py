@@ -1,16 +1,6 @@
 
 # QUESTION 1
 
-# PART A
-print("PART A: Applications of Numerical Computation")
-print("1. Weather forecasting")
-print("2. Engineering design and analysis")
-print("3. Financial modeling")
-print("4. Computer graphics")
-print("5. Scientific simulations")
-print("6. Medical and biological modeling")
-
-
 # PART B
 print("\nPART B: Substitution Method")
 
@@ -37,3 +27,23 @@ z = 16 / 7
 print("x =", round(x, 4))
 print("y =", round(y, 4))
 print("z =", round(z, 4))
+
+# Question 1(c) - Jacobi Iteration
+
+x = 0
+y = 0
+
+print("Question 1(c)")
+print("Iteration       x          y")
+
+for i in range(1, 6):
+
+    # Use OLD values
+    x_new = (11 - y) / 10
+    y_new = (12 - 2*x) / 10
+
+    print(i, "          ", round(x_new, 3),
+          "     ", round(y_new, 3))
+
+    x = x_new
+    y = y_new
