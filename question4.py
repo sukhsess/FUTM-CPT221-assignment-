@@ -1,18 +1,3 @@
-print("\nQUESTION 4A")
-print("Numerical Computation")
-
-print("Numerical computation is the use of numerical")
-print("methods and computational techniques to obtain")
-print("approximate solutions to mathematical problems.")
-
-print("\nImportance in Computer Science:")
-print("1. Scientific computing")
-print("2. Computer graphics")
-print("3. Artificial intelligence")
-print("4. Machine learning")
-print("5. Data analysis")
-print("6. Computer simulations")
-print("7. Optimization")
 
 
 print("\nQUESTION 4B")
@@ -31,3 +16,27 @@ for i in range(3):
     print("Iteration", i + 1, ":", round(x, 6))
 
 print("Positive root =", round(x, 4))
+
+
+# Question 4(c) - Euler Method
+
+def f(x, y):
+    return 2 * x + y
+
+x = 0
+y = 1
+h = 0.1
+
+print("Question 4(c)")
+print("x       y")
+
+print(round(x, 1), "   ", round(y, 4))
+
+while x < 0.3:
+
+    y = y + h * f(x, y)
+    x = x + h
+
+    print(round(x, 1), "   ", round(y, 4))
+
+print("\ny(0.3) =", round(y, 4))
