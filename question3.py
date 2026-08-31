@@ -1,13 +1,3 @@
-print("\nQUESTION 3A")
-print("Interpolation")
-print("Interpolation is a numerical technique used to estimate")
-print("an unknown value between known data points.")
-
-print("\nWhy interpolation is needed:")
-print("1. To estimate unknown values between known data points.")
-print("2. To estimate missing experimental data.")
-print("3. To approximate functions.")
-print("4. To analyze numerical data.")
 
 
 print("\nQUESTION 3B")
@@ -24,3 +14,32 @@ for i in range(6):
     print("Iteration", i + 1, ":", round(x, 6))
 
 print("Approximate root =", round(x, 4))
+
+
+# Question 3(c) - LU Decomposition
+
+# Equations:
+# 2x + 3y = 8
+# 4x + y = 10
+
+# A = LU
+
+# L = [1 0]
+#     [2 1]
+
+# U = [2 3]
+#     [0 -5]
+
+# Solve Lz = b
+
+z1 = 8
+z2 = 10 - 2 * z1
+
+# Solve Ux = z
+
+y = z2 / (-5)
+x = (z1 - 3 * y) / 2
+
+print("Question 3(c)")
+print("x =", round(x, 4))
+print("y =", round(y, 4))
